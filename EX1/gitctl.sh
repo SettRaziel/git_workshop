@@ -33,9 +33,9 @@ source ./arguments.sh ${1}
 cd ${SCRIPT_PATH}
 
 case ${ARGUMENT} in
-  INIT)
+  "INIT")
   ex_reset;;
-  RESET)
+  "RESET")
   ex_reset;;
   "HINT")
   ex_hint;;
