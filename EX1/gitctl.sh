@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+LIB_PATH="../.resources/libs/"
 
 # clean the directory of all file
 ex_reset () {
@@ -21,16 +22,16 @@ ex_hint () {
 }
 
 SCRIPT_PATH=$(pwd)
-source ../terminal_color.sh
+source "${LIB_PATH}terminal_color.sh"
 
 # error handling for input parameter
 if [ "$#" -gt 1 ]; then
   printf "%bMore arguments given than required. Ignoring all but the first.%b\\n" "${YELLOW}" "${NC}"
 fi
 
-cd .. || exit 1
+cd "${LIB_PATH}" || exit 1
 source ./arguments.sh ${1}
-cd ${SCRIPT_PATH}
+cd "${SCRIPT_PATH}" || exit 1
 
 case ${ARGUMENT} in
   "INIT")
