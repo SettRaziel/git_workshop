@@ -58,9 +58,11 @@ source ./arguments.sh ${1}
 cd "${SCRIPT_PATH}" || exit 1
 
 case ${ARGUMENT} in
-  INIT)
+  "CLEAN")
+  ex_clean;;
+  "INIT")
   ex_init;;
-  RESET)
+  "RESET")
   ex_reset;;
   "HINT")
   ex_hint;;

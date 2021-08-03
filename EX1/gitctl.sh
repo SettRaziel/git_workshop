@@ -34,6 +34,8 @@ source ./arguments.sh ${1}
 cd "${SCRIPT_PATH}" || exit 1
 
 case ${ARGUMENT} in
+  "CLEAN")
+  ex_reset;;
   "INIT")
   ex_reset;;
   "RESET")
