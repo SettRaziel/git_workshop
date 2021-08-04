@@ -31,7 +31,7 @@ done
 
 if [ ${ARGUMENT} == "HELP" ]; then
   printf "%bscript usage:%b ./gitctl.sh parameter\\n" "${GREEN}" "${NC}"
-  printf "%bModel run parameter:\\n%b" "${YELLOW}" "${NC}"
+  printf "%bscript parameter:\\n%b" "${YELLOW}" "${NC}"
   printf "%b --help      %b   show help text\\n" "${LIGHT_BLUE}" "${NC}"
   printf "%b --clean     %b   clean up the exercise and personal changes\\n" "${LIGHT_BLUE}" "${NC}"
   printf "%b --hint      %b   show hints for the current exercise\\n" "${LIGHT_BLUE}" "${NC}"
