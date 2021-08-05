@@ -45,6 +45,7 @@ To start one of the exercises navigate into the directory of the execise you wan
 
 ### EX1
 Initialize a new git repository and create your first commit
+Details check [readme](./EX1/README.md)
 
 ### EX2
 Create a new branch, make a commit in that branch and compare it with the main branch
