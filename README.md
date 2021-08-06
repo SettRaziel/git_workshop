@@ -49,6 +49,7 @@ Details check [readme](./EX1/README.md)
 
 ### EX2
 Create a new branch, make a commit in that branch and compare it with the main branch
+Details check [readme](./EX2/README.md)
 
 ### EX3
 Work on an existing branch and merge it to the main branch to learn more about visibility
