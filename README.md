@@ -26,7 +26,7 @@ repository appears to be beyond repair just throw it away and get another clone 
 new files the follwing commands can be used to do some local housekeeping:
 The command `git reset HEAD` removes files that are added to index area (using `git status` they are marked in green color, unstaged changes are marked in red).
 The command `git checkout .` in the root directory of the repository restores all modified files to the latest tracked version, removing all changes that have 
-been done.
+been done.  
 The command `git clean -df` removes every newly created file that is not tracked in this repository.
 
 If you created some commits the easiest way to restore the repository to its initial state is through the command `git reset --hard origin/main`. This command 
@@ -37,22 +37,23 @@ copy).
 Before jumping into the exercises you need some basic knowledge what git is and how it works. Since the exercises are prepared as a practical approach to use 
 previous gained knowledge it will hint to you which commands should be used to solve the exercise, but there will be not detailed explanation what the command
 and its additional flags do. You can always use the terminal help pages by typing `git help <command>` to get an overview of the the command and its numerous 
-flags.
+flags.  
 There are many awesome introductions to git, that you can check if you are completely new to git.
 
 ## Exercises
 To start one of the exercises navigate into the directory of the execise you want to solve and initialize the environment typing `gitctl.sh --init`.
 
 ### EX1
-Initialize a new git repository and create your first commit
+Initialize a new git repository and create your first commit  
 Details check [readme](./EX1/README.md)
 
 ### EX2
-Create a new branch, make a commit in that branch and compare it with the main branch
+Create a new branch, make a commit in that branch and compare it with the main branch  
 Details check [readme](./EX2/README.md)
 
 ### EX3
-Work on an existing branch and merge it to the main branch to learn more about visibility
+Work on an existing branch and merge it to the main branch to learn more about visibility  
+Details check [readme](./EX3/README.md)
 
 ### EX4
 Work with branches that have conflicting changes and solve the conflict for a consistent snapshot
