@@ -56,4 +56,5 @@ Work on an existing branch and merge it to the main branch to learn more about v
 Details check [readme](./EX3/README.md)
 
 ### EX4
-Work with branches that have conflicting changes and solve the conflict for a consistent snapshot
+Work with branches that have conflicting changes and solve the conflict for a consistent snapshot  
+Details check [readme](./EX4/README.md)
