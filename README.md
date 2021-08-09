@@ -1,5 +1,6 @@
 # Git Workshop
 Interactive git tutorial for the terminal.
+Current version: v0.1.0
 
 ## Usage
 Navigate into an exercise folder to solve the given exercise. Each exercise holds a small helper script called `gitctl.sh`.
