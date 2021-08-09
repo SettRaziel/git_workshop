@@ -1,12 +1,12 @@
 # Exercise 4: merge conflict basics
-This exercise will show a special conflict case when merging to commit or branches to create a
-consitent snapshot of the repository. These merge commits normally happen when two commit apply
+This exercise will show a special conflict case when merging two commits or branches to create a
+consitent snapshot of the repository. These merge conflicts normally happen when two commits apply
 changes in the same line in a file. This is called a conflicting change.
 
 When you apply changes in the same file, but at different places, git will notice that and merge
 these changes automatically since it does not need do decide which change of the line it should
 apply. This is different when the changes occur in the same line. At that point git would need to
-decide which change should survive. In the default git does not take this responsability and the
+decide which change should survive. In the default git does not take this responsibility and the
 automatic merge will fail.
 
 The user who wants to merge these changes needs to decide how to deal with the conflicting change.
@@ -29,7 +29,7 @@ the console should present a merge conflict, which you can review with `git stat
 state `merging`. That means that a merge in ongoing but was interrupted. You can abort the merge by using
 `git merge --abort`. Try to solve the conflict by deciding which change should be committed. Edit the 
 conflict section, remove the conflict tags and prepare the changes. After that add the file to the index 
-with `git add <filename>`. This will signal to git that you have checked the merge conflict and that 
+with `git add <filename>`. This will signal to git that you have checked the merge conflict and approved 
 these changes. Finish the merge with `git commit`. Git will prepare a commit message for you which states
 that a merge will be done. Close the editor without doing changes to the commit message and finish
 the merge. Check if the repository is in a working state again and the merge appears in the log.

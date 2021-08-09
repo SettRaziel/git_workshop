@@ -6,21 +6,23 @@ repository on your remote git server. When creating a new repository there the g
 will cover the basic commands for you.
 
 A new repository is created by using `git init` at the place where the repository should have its root
-directory. A executing the command the directory will present a new .git folder (if you have activated
-that hidden files and directories should be shown). In there git will handle all of its clerical work
-to manage the git repository for you. You should leave it untouched because normally you have no business
-within this directory. Notice that when you use `git status` this folder will not be shown as something
-that needs to be tracked.
+directory. Executing the command in a directory will present a new .git folder (if you have activated
+that hidden files and directories should be shown; on the terminal you can use `ls -la` to check them).
+In there git will handle all of its clerical work to manage the git repository for you. You should 
+leave it untouched because normally you have no business within this directory. Notice that 
+when you use `git status` this folder will not be shown as something that needs to be tracked.
 
-Now it is time to create a file with some content for which you will track its changes. After doing this
+Now it is time to create a file with some content for which you want track its changes. After doing this
 the `git status` command will show a new file that is currently not tracked through the repository. Use the
-`git add <file>` command with to add the file on the index or the stating area. This actions signals the 
+`git add <file>` command to add the file on the index / staging area. This actions signals the 
 repository that changes to this file should be tracked from now on. Reviewing the status of your repository
-should show your file within the staging area colorized in green.
+should show your file within the staging area colorized in green. All files and its changes on the index 
+will be part of the next commit. Everything still marked as changed or new in the directory (entries in red)
+will not be considered to commiting.
 
-Commit the changes with the `git commit` command that opens the editor defined in the editor variable to define
+Commit the changes with the `git commit` command that opens the editor defined in the editor variable to write
 a commit message. Type your commit message. Basically the first line is the headline if you want to review it
-on your remote git server. Additional descriptions should follow after an empty line following the head.
+on your remote git server. Additional descriptions should follow after an empty line following the headline.
 By saving and exiting the editor your commit will be finished. Check if your can see your commit by using the
 `git log` command.
 

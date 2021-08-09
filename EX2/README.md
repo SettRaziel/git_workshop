@@ -19,7 +19,7 @@ branch is the branch on which you are set when cloning the repository from a rem
 To create a new branch use the command `git branch <branch_name>`. This will create a new branch
 whose content is based on the current commit you are on. After creating a new branch you can switch
 to it by using `git checkout <branch_name>`. There is a command flag to combine these two commands.
-When you extend the checkout command to `git checkout -b <branch_name>` you will create and branch
+When you extend the checkout command to `git checkout -b <branch_name>` you will create a branch
 and also switch to it.
 
 Try switching between branches. To see all existing branches you can use `git branch -a`. When you
